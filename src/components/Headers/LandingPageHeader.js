@@ -45,7 +45,7 @@ function LandingPageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/daniel-olahh.jpg") + ")",
+            "url(" + require("assets/img/img-939Qn7MQY2ocov7YaLOiAosS.png") + ")",
         }}
         className="page-header"
         data-parallax={true}
@@ -54,10 +54,10 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Example page</h1>
-            <h3>Start designing your landing page here.</h3>
+            <h1>Bienvenidos/as a Riquel Tech Solutions</h1>
+            <h3>Innovación, experiencia, robótica, soluciones digitales, informáticas y de web3 para un futuro digital y sustentable.</h3>
             <br />
-            <Button
+{/*            <Button
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               className="btn-round mr-1"
               color="neutral"
@@ -65,11 +65,11 @@ function LandingPageHeader() {
               outline
             >
               <i className="fa fa-play" />
-              Watch video
-            </Button>
-            <Button className="btn-round" color="neutral" type="button" outline>
+              Watch video about us
+            </Button>*/}
+{            /*<Button className="btn-round" color="neutral" type="button" outline>
               Download
-            </Button>
+            </Button>*/}
           </div>
         </Container>
       </div>

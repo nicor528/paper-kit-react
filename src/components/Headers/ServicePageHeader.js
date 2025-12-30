@@ -19,10 +19,11 @@
 import React from "react";
 
 // reactstrap components
+import { Button, Container } from "reactstrap";
 
 // core components
 
-function ProfilePageHeader() {
+function ServicecPageHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -44,16 +45,38 @@ function ProfilePageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")",
+            "url(" + require("assets/img/img-wyawBmYf2VpkOlpsXBuuyRaz.png") + ")",
         }}
-        className="page-header page-header-xs"
+        className="page-header"
         data-parallax={true}
         ref={pageHeader}
       >
         <div className="filter" />
+        <Container>
+          <div className="motto text-center">
+            <h1>Riquel Tech Solutions y sus servicios</h1>
+            <h3>Aqui se encuentra una descripcion de nuestros servicios uno a uno, 
+              asi tambien como ejemplos a algunos de nuestros trabajos.
+            </h3>
+            <br />
+{/*            <Button
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              className="btn-round mr-1"
+              color="neutral"
+              target="_blank"
+              outline
+            >
+              <i className="fa fa-play" />
+              Watch video about us
+            </Button>*/}
+{            /*<Button className="btn-round" color="neutral" type="button" outline>
+              Download
+            </Button>*/}
+          </div>
+        </Container>
       </div>
     </>
   );
 }
 
-export default ProfilePageHeader;
+export default ServicecPageHeader;

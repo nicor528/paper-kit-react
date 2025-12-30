@@ -19,10 +19,11 @@
 import React from "react";
 
 // reactstrap components
+import { Button, Container } from "reactstrap";
 
 // core components
 
-function ProfilePageHeader() {
+function LandingPageHeaderExample() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -44,16 +45,33 @@ function ProfilePageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")",
+            "url(" + require("assets/img/daniel-olahh.jpg") + ")",
         }}
-        className="page-header page-header-xs"
+        className="page-header"
         data-parallax={true}
         ref={pageHeader}
       >
         <div className="filter" />
+        <Container>
+          <div className="motto text-center">
+            <h1>Example page</h1>
+            <h3>Start designing your landing page here.</h3>
+            <br />
+            <Button
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              className="btn-round mr-1"
+              color="neutral"
+              target="_blank"
+              outline
+            >
+              <i className="fa fa-play" />
+              Watch video
+            </Button>
+          </div>
+        </Container>
       </div>
     </>
   );
 }
 
-export default ProfilePageHeader;
+export default LandingPageHeaderExample;

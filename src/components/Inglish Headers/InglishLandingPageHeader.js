@@ -19,10 +19,11 @@
 import React from "react";
 
 // reactstrap components
+import { Button, Container } from "reactstrap";
 
 // core components
 
-function ProfilePageHeader() {
+function InglishLandingPageHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -44,16 +45,36 @@ function ProfilePageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")",
+            "url(" + require("assets/img/img-939Qn7MQY2ocov7YaLOiAosS.png") + ")",
         }}
-        className="page-header page-header-xs"
+        className="page-header"
         data-parallax={true}
         ref={pageHeader}
       >
         <div className="filter" />
+        <Container>
+          <div className="motto text-center">
+            <h1>Welcome to Riquel Tech Solutions</h1>
+            <h3>Innovation, experience, robotics, digital solutions, IT, and Web3 for a digital and sustainable future.</h3>
+            <br />
+{/*            <Button
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              className="btn-round mr-1"
+              color="neutral"
+              target="_blank"
+              outline
+            >
+              <i className="fa fa-play" />
+              Watch video about us
+            </Button>*/}
+{            /*<Button className="btn-round" color="neutral" type="button" outline>
+              Download
+            </Button>*/}
+          </div>
+        </Container>
       </div>
     </>
   );
 }
 
-export default ProfilePageHeader;
+export default InglishLandingPageHeader;

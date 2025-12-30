@@ -43,9 +43,10 @@ import SectionCarouselServices from "views/index-sections/SectionCarousel-servic
 import RiquiTechNavBar from "components/Navbars/riquitech-navbar";
 import RiquiFooter from "components/Footers/RiquiFooter";
 import { Link, NavLink } from "react-router-dom";
-import { FaInstagram } from 'react-icons/fa';
+import InglishRiquiTechNavBar from "components/Inglish Navbars/inglish-riquitech-navbar";
+import InglishLandingPageHeader from "components/Inglish Headers/InglishLandingPageHeader";
 
-function LandingPage() {
+function InglishLandingPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -55,25 +56,24 @@ function LandingPage() {
   });
   return (
     <>
-      <RiquiTechNavBar />
-      <LandingPageHeader />
+      <InglishRiquiTechNavBar />
+      <InglishLandingPageHeader />
       <div className="main">
         <div className="section text-center">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Un poco sobre nosotros</h2>
+                <h2 className="title">A bit about us</h2>
                 <h5 className="description">
-                Forjando el futuro en el mundo digital: Riqui Techs. Nuestra startup, 
-                liderada por un profesional con 9 años de experiencia y casi 2 años dedicados al 
-                desarrollo de aplicaciones, fusiona la frescura de nuevas ideas con la solidez de la experiencia. 
-                Desde nuestra fundación, hemos estado creando un impacto significativo en el ecosistema digital, 
-                ofreciendo soluciones innovadoras en páginas web, software personalizado y servicios en la nube.
-                 Como pioneros en tecnología web3 y robótica, estamos a la vanguardia de la revolución descentralizada, 
-                 aprovechando el potencial de la blockchain, las criptomonedas y la robótica. Con un equipo de expertos 
-                 apasionados, estamos listos para enfrentar cualquier desafío tecnológico y proporcionar perspectivas 
-                 valiosas a su negocio en crecimiento. En Riqui Techs, nos comprometemos con la excelencia y la innovación, 
-                 liderando el camino hacia un futuro digital brillante.
+                Forging the future in the digital world: Riqui Techs. Our startup, led by a 
+                professional with 9 years of experience and nearly 2 years dedicated to application 
+                development, merges the freshness of new ideas with the solidity of experience. Since our 
+                foundation, we have been making a significant impact in the digital ecosystem, offering innovative 
+                solutions in web pages, custom software, and cloud services. As pioneers in web3 technology and robotics, 
+                we are at the forefront of the decentralized revolution, harnessing the potential of blockchain, 
+                cryptocurrencies, and robotics. With a team of passionate experts, we are ready to tackle any technological 
+                challenge and provide valuable insights to your growing business. At Riqui Techs, we are committed to 
+                excellence and innovation, leading the way to a bright digital future.
                 </h5>
                 <br />
 {      /*          <Button
@@ -95,13 +95,13 @@ function LandingPage() {
                     <i className="nc-icon nc-badge" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Landing pages o paginas de presentación</h4>
+                    <h4 className="info-title">Landing pages or presentation pages</h4>
                     <p className="description">
-                    Impulsa tu presencia online con nuestras landing pages personalizadas. 
-                    Rápidas, efectivas y diseñadas para captar la atención de tus clientes potenciales.
+                    Boost your online presence with our custom landing pages. Fast, effective, and designed 
+                    to capture the attention of your potential customers.
                     </p>
                     <Button className="btn-link" color="info">
-                      <NavLink to="/services-page" tag={Link} target="">
+                      <NavLink to="/services-page-in" tag={Link} target="">
                       See more
                       </NavLink>
                     </Button>
@@ -114,13 +114,12 @@ function LandingPage() {
                     <i className="nc-icon nc-bag-16" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Páginas de E-commerce o Venta Electrónica</h4>
+                    <h4 className="info-title">E-commerce Pages or Electronic Sales</h4>
                     <p className="description">
-                    Impulsa tu presencia online con nuestras páginas de e-commerce personalizadas. Diseñadas para 
-                    adaptarse a tus necesidades comerciales, estas páginas son tu puerta de entrada al mundo digital del 
-                    comercio.</p>
+                    Boost your online presence with our custom e-commerce pages. Designed to adapt to your business needs, 
+                    these pages are your gateway to the digital world of commerce.</p>
                     <Button className="btn-link" color="info">
-                      <NavLink to="/services-page#landing" tag={Link} target="">
+                      <NavLink to="/services-page-in#landing" tag={Link} target="">
                       See more
                       </NavLink>
                     </Button>
@@ -133,13 +132,13 @@ function LandingPage() {
                     <i className="nc-icon nc-bulb-63" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Desarrollo de nuevas ideas</h4>
+                    <h4 className="info-title">Development of New Ideas</h4>
                     <p>
-                    Transforma tus ideas en realidad con nuestro servicio de desarrollo. 
-                    Innovación y experiencia trabajando juntas para hacer posible lo imposible.
+                    Turn your ideas into reality with our development service. Innovation and experience working 
+                    together to make the impossible possible.
                     </p>
                     <Button className="btn-link" color="info">
-                      <NavLink to="/services-page#newideas" tag={Link} target="">
+                      <NavLink to="/services-page-in#newideas" tag={Link} target="">
                       See more
                       </NavLink>
                     </Button>
@@ -152,13 +151,13 @@ function LandingPage() {
                     <i className="nc-icon nc-chart-bar-32" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Estadisticas y Análisis de datos</h4>
+                    <h4 className="info-title">Statistics and Data Analysis</h4>
                     <p>
-                    Descubre información valiosa con nuestro servicio de análisis de datos. 
-                    Transforma números en insights poderosos para impulsar tu negocio hacia el éxito.
+                    Discover valuable insights with our data analysis service. Transform numbers into powerful insights 
+                    to drive your business towards success.
                     </p>
                     <Button className="btn-link" color="info">
-                      <NavLink to="/services-page#data" tag={Link} target="">
+                      <NavLink to="/services-page-in#data" tag={Link} target="">
                       See more
                       </NavLink>
                     </Button>
@@ -171,13 +170,13 @@ function LandingPage() {
                     <i className="nc-icon nc-settings-gear-65" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Robótica y Domótica</h4>
+                    <h4 className="info-title">Robotics and Home Automation</h4>
                     <p>
-                    Automatiza tu hogar u oficina con nuestra experiencia en robótica y domótica. 
-                    Soluciones inteligentes para hacer tu vida más cómoda y eficiente.
+                    Automate your home or office with our expertise in robotics and home automation. 
+                    Smart solutions to make your life more comfortable and efficient.
                     </p>
                     <Button className="btn-link" color="info">
-                      <NavLink to="/services-page#robotica" tag={Link} target="">
+                      <NavLink to="/services-page-in#robotica" tag={Link} target="">
                       See more
                       </NavLink>
                     </Button>
@@ -190,13 +189,13 @@ function LandingPage() {
                     <i className="nc-icon nc-money-coins" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Marketing digital</h4>
+                    <h4 className="info-title">Digital Marketing</h4>
                     <p>
-                      Eleva tu estrategia digital con nuestro expertise en marketing. 
-                      Soluciones personalizadas para aumentar tu visibilidad y alcanzar tus objetivos.
+                    Elevate your digital strategy with our expertise in marketing. 
+                    Customized solutions to increase your visibility and achieve your goals.
                     </p>
                     <Button className="btn-link" color="info">
-                      <NavLink to="/services-page#marketing" tag={Link} target="">
+                      <NavLink to="/services-page-in#marketing" tag={Link} target="">
                       See more
                       </NavLink>
                     </Button>
@@ -209,15 +208,13 @@ function LandingPage() {
                     <i className="nc-icon nc-album-2" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Diseño Grafico</h4>
+                    <h4 className="info-title">Graphic Design</h4>
                     <p>
-                    Transformamos tu visión en realidad visual. 
-                    Desde logotipos hasta imágenes impactantes, 
-                    nuestro servicio de diseño gráfico da vida a tus ideas con 
-                    creatividad y profesionalismo.
+                    We turn your vision into visual reality. From logos to striking images, our 
+                    graphic design service brings your ideas to life with creativity and professionalism.
                     </p>
                     <Button className="btn-link" color="info">
-                      <NavLink to="/services-page#landing" tag={Link} target="">
+                      <NavLink to="/services-page-in" tag={Link} target="">
                       See more
                       </NavLink>
                     </Button>
@@ -396,65 +393,58 @@ function LandingPage() {
             </Row>
           </Container>
         </div>*/}
-  <div className="section landing-section">
-        <Container>
-          <Row>
-            <Col className="ml-auto mr-auto" md="8">
-              <h2 className="text-center">Contáctanos</h2>
-              <Form className="contact-form">
-                <Row>
-                  <Col md="6">
-                    <label>Teléfono</label>
-                    <InputGroup>
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="nc-icon nc-mobile" />
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input placeholder="Teléfono" type="text" value={"+541169018596"} readOnly />
-                    </InputGroup>
-                  </Col>
-                  <Col md="6">
-                    <label>Email</label>
-                    <InputGroup>
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="nc-icon nc-email-85" />
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input placeholder="Email" type="text" value={"nicolasriquelme528@gmail.com"} readOnly />
-                    </InputGroup>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col md="6">
-                    <label>Instagram</label>
-                    <InputGroup>
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <FaInstagram />
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <a
-                        href="https://www.instagram.com/riquitechs/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="form-control"
-                      >
-                        @riquitechs
-                      </a>
-                    </InputGroup>
-                  </Col>
-                </Row>
-              </Form>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+        <div className="section landing-section">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto" md="8">
+                <h2 className="text-center">Contact us</h2>
+                <Form className="contact-form">
+                  <Row>
+                    <Col md="6">
+                      <label>Phone</label>
+                      <InputGroup>
+                        <InputGroupAddon addonType="prepend">
+                          <InputGroupText>
+                            <i className="nc-icon nc-mobile" />
+                          </InputGroupText>
+                        </InputGroupAddon>
+                        <Input placeholder="Teléfono" type="text" value={"+541169018596"} />
+                      </InputGroup>
+                    </Col>
+                    <Col md="6">
+                      <label>Email</label>
+                      <InputGroup>
+                        <InputGroupAddon addonType="prepend">
+                          <InputGroupText>
+                            <i className="nc-icon nc-email-85" />
+                          </InputGroupText>
+                        </InputGroupAddon>
+                        <Input placeholder="Email" type="text" value={"nicolasriquelme528@gmail.com"} ></Input>
+                      </InputGroup>
+                    </Col>
+                  </Row>
+{/*                  <label>Message</label>
+                  <Input
+                    placeholder="Tell us your thoughts and feelings..."
+                    type="textarea"
+                    rows="4"
+                  />*/}
+{/*                  <Row>
+                    <Col className="ml-auto mr-auto" md="4">
+                      <Button className="btn-fill" color="danger" size="lg">
+                        Send Message
+                      </Button>
+                    </Col>
+                  </Row>*/}
+                </Form>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
       <RiquiFooter />
     </>
   );
 }
 
-export default LandingPage;
+export default InglishLandingPage;

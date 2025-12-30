@@ -30,6 +30,14 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
+import ServicesPage from "views/examples/ServicesPage";
+import LandingPageExample from "views/examples/LandingPageExample";
+import ProfilePageRiqui from "views/examples/ProfilePageRiqui";
+import Contact from "views/examples/contact";
+import InglishLandingPage from "views/inglish/InglishLandingPage";
+import InglishServicesPage from "views/inglish/InglishServicesPage";
+import InglishProfilePageRiqui from "views/inglish/InglishProfilePageRiqui";
+import InglishContact from "views/inglish/Inglishcontact";
 // others
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -37,12 +45,22 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/index" element={<Index />} />
+{      <Route path="/index" element={<Index />} />}
       <Route path="/nucleo-icons" element={<NucleoIcons />} />
       <Route path="/landing-page" element={<LandingPage />} />
-      <Route path="/profile-page" element={<ProfilePage />} />
+      <Route path="/landing-page-example" element={<LandingPageExample />} />
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/profile-page-nico" element={<ProfilePageRiqui />} />
+      <Route path="/profile-page-brian" element={<ProfilePageRiqui />} />
+      <Route path="/profile-page-julian" element={<ProfilePageRiqui />} />
       <Route path="/register-page" element={<RegisterPage />} />
-      <Route path="*" element={<Navigate to="/index" replace />} />
+      <Route path="/services-page" element={<ServicesPage />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+      <Route path="/landing-page-in" element={<InglishLandingPage />} />
+      <Route path="/services-page-in" element={<InglishServicesPage />} />
+      <Route path="/profile-page-nico-in" element={<InglishProfilePageRiqui />} />
+      <Route path="/contact-in" element={<InglishContact />} />
     </Routes>
   </BrowserRouter>
 );
