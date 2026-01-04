@@ -27,7 +27,6 @@ import "assets/demo/demo.css?v=1.3.0";
 // pages
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
-import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ServicesPage from "views/examples/ServicesPage";
@@ -38,29 +37,34 @@ import InglishLandingPage from "views/inglish/InglishLandingPage";
 import InglishServicesPage from "views/inglish/InglishServicesPage";
 import InglishProfilePageRiqui from "views/inglish/InglishProfilePageRiqui";
 import InglishContact from "views/inglish/Inglishcontact";
+import LandingPage2 from "views/final/LandingPage2";
+import LandingPage from "views/examples/LandingPage";
+import { LanguageProvider } from "context/LanguageContext";
 // others
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
-    <Routes>
-{      <Route path="/index" element={<Index />} />}
-      <Route path="/nucleo-icons" element={<NucleoIcons />} />
-      <Route path="/landing-page" element={<LandingPage />} />
-      <Route path="/landing-page-example" element={<LandingPageExample />} />
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/profile-page-nico" element={<ProfilePageRiqui />} />
-      <Route path="/profile-page-brian" element={<ProfilePageRiqui />} />
-      <Route path="/profile-page-julian" element={<ProfilePageRiqui />} />
-      <Route path="/register-page" element={<RegisterPage />} />
-      <Route path="/services-page" element={<ServicesPage />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
-      <Route path="/landing-page-in" element={<InglishLandingPage />} />
-      <Route path="/services-page-in" element={<InglishServicesPage />} />
-      <Route path="/profile-page-nico-in" element={<InglishProfilePageRiqui />} />
-      <Route path="/contact-in" element={<InglishContact />} />
-    </Routes>
-  </BrowserRouter>
+  <LanguageProvider>
+    <BrowserRouter>
+      <Routes>
+  {      <Route path="/index" element={<Index />} />}
+        <Route path="/nucleo-icons" element={<NucleoIcons />} />
+        <Route path="/landing-page2" element={<LandingPage2 />} />
+        <Route path="/landing-page-example" element={<LandingPageExample />} />
+        <Route path="/" element={<LandingPage2 />} />
+        <Route path="/profile-page-nico" element={<ProfilePageRiqui />} />
+        <Route path="/profile-page-brian" element={<ProfilePageRiqui />} />
+        <Route path="/profile-page-julian" element={<ProfilePageRiqui />} />
+        <Route path="/register-page" element={<RegisterPage />} />
+        <Route path="/services-page" element={<ServicesPage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/landing-page-in" element={<InglishLandingPage />} />
+        <Route path="/services-page-in" element={<InglishServicesPage />} />
+        <Route path="/profile-page-nico-in" element={<InglishProfilePageRiqui />} />
+        <Route path="/contact-in" element={<InglishContact />} />
+      </Routes>
+    </BrowserRouter>
+  </LanguageProvider>
 );

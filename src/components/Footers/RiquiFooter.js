@@ -34,7 +34,7 @@ function RiquiFooter() {
                   href="/"
                   target="_blank"
                 >
-                  RiquelTechSolutions
+                  RIQUI TECH'S SOLUTIONS
                 </a>
               </li>
               <li>
